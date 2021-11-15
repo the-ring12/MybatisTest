@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 配置数据源 -> Spring -->
+
+    <!-- 驼峰命名自动映射 -->
+    <settings>
+        <setting name="mapUnderscroeToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <package name="com.the_ring.domain"/>
+    </typeAliases>
+
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC">-->
+<!--                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/library?serverTimezone=UTC"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="niit66"/>-->
+<!--            </transactionManager>-->
+<!--            <dataSource type="POOLED"></dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
+<!--    <mappers>-->
+<!--        <mapper resource="mappers/AdminMapper.xml"></mapper>-->
+<!--    </mappers>-->
+</configuration>
