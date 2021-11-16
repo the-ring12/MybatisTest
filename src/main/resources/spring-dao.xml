@@ -43,6 +43,12 @@
         <property name="dataSource" ref="dataSource"/>
         <!-- 配置 MyBatis 全局配置文件 -->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="mapperLocations" value="classpath:com/the_ring/dao/*Mapper.xml"/>
+<!--        <property name="mapperLocations">-->
+<!--            <list>-->
+<!--                <value>classpath:com/the_ring/dao/**Mapper.xml</value>-->
+<!--            </list>-->
+<!--        </property>-->
     </bean>
 
 
@@ -53,5 +59,12 @@
         <!-- 给出需要扫描 Dao 接口包 -->
         <property name="basePackage" value="com.the_ring.dao"/>
     </bean>
+    
+<!--    <bean id="adminMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+<!--        &lt;!&ndash; sqlSessionFactory 属性指定要用到的 SqlSessionFactory 实例 &ndash;&gt;-->
+<!--        <property name="sqlSessionFactory" value="sqlSessionFactory"/>-->
+<!--        &lt;!&ndash; mapperInterface 属性制动映射器接口，用于实现接口并生成映射器对象 &ndash;&gt;-->
+<!--        <property name="mapperInterface" value="com.the_ring.dao.AdminMapper"/>-->
+<!--    </bean>-->
 
 </beans>

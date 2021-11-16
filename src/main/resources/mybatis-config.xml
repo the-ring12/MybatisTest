@@ -7,9 +7,9 @@
     <!-- 配置数据源 -> Spring -->
 
     <!-- 驼峰命名自动映射 -->
-    <settings>
-        <setting name="mapUnderscroeToCamelCase" value="true"/>
-    </settings>
+<!--    <settings>-->
+<!--        <setting name="mapUnderscroeToCamelCase" value="true"/>-->
+<!--    </settings>-->
 
     <typeAliases>
         <package name="com.the_ring.domain"/>
@@ -28,6 +28,6 @@
 <!--    </environments>-->
 
 <!--    <mappers>-->
-<!--        <mapper resource="mappers/AdminMapper.xml"></mapper>-->
+<!--        <package name="com.the_ring.dao"/>-->
 <!--    </mappers>-->
 </configuration>

@@ -5,7 +5,7 @@
 
 <mapper namespace="com.the_ring.dao.AdminMapper">
 
-    <select id="getMatchCount" parameterType="com.the_ring.domain.Admin" resultType="int">
+    <select id="getMatchCount" parameterType="com.the_ring.domain.Admin" resultType="java.lang.Integer">
         SELECT COUNT(*) FROM admin where admin_id =#{admin_id} and password =#{password}
     </select>
 
